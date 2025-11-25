@@ -137,15 +137,6 @@ public:
 
     Iterator begin() { return Iterator(head); }
     Iterator end() { return Iterator(nullptr); }
-
-    void print() const {
-        std::cout << "[";
-        for (Node *curr = head; curr; curr = curr->next) {
-            std::cout << curr->data;
-            if (curr->next) std::cout << ", ";
-        }
-        std::cout << "]\n";
-    }
 };
 
 
